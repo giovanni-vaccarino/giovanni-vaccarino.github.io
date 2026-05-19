@@ -5,6 +5,6 @@ category: accepted
 permalink: /publication/2025-07-01-distributed-system-ambient-monitoring
 excerpt: ''
 date: 2026-02-01
-venue: 'PAISE 2026 (Workshop at IPDPS 2026)'
+venue: '<strong>PAISE 2026 (Workshop at IPDPS 2026)</strong>'
 authors: 'Susanna Bardini, Alessandro Versosimile, Giovanni Vaccarino, Marco Domenico Santambrogio'
 ---

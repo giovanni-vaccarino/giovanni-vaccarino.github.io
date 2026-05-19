@@ -7,10 +7,6 @@ author_profile: true
 
 {% include base_path %}
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
 <style>
   .pub-section h2 {
     font-size: 1.3em;
@@ -60,13 +56,23 @@ author_profile: true
 
 <div class="pub-section">
 
+  <p style="opacity: 0.6; font-size: 0.85em; font-style: italic; font-weight: bold; margin-bottom: 0;">* denotes equal contribution.</p>
+
   <h2>Preprints</h2>
-  
-  <!--
   <ul class="pub-list">
-    <li><em></em></li>
+    {% assign preprints = site.publications | where: "category", "preprint" | sort: "date" | reverse %}
+    {% for post in preprints %}
+      <li>
+        <span class="pub-title">{{ post.title }}
+          {% if post.paperurl %}
+            <a class="pub-link" href="{{ post.paperurl }}">[pdf]</a>
+          {% endif %}
+        </span>
+        <span class="pub-authors">{{ post.authors | replace: "Giovanni Vaccarino", '<strong class="pub-me">Giovanni Vaccarino</strong>' }}</span>
+        <span class="pub-venue">{{ post.venue }}</span>
+      </li>
+    {% endfor %}
   </ul>
-  -->
 
   <h2>Accepted Papers</h2>
   <ul class="pub-list">
