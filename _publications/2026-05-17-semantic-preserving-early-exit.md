@@ -5,7 +5,7 @@ category: preprint
 permalink: /publication/2026-05-17-semantic-preserving-early-exit
 excerpt: ''
 date: 2026-05-17
-venue: 'Preprint (arXiv:2605.17672), <strong>NeurIPS 2026 (under review)</strong>'
+venue: 'Preprint (arXiv:2605.17672), <strong>ICLR 2027 (under review)</strong>'
 paperurl: 'https://arxiv.org/abs/2605.17672'
 authors: 'Dehai Min*, Giovanni Vaccarino*, Huiyi Chen, Yongliang Wu, Gal Yona, Lu Cheng'
 ---
